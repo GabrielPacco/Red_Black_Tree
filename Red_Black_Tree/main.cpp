@@ -6,9 +6,21 @@
 //
 
 #include <iostream>
+#include "RBTree.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+
+
+int main(){
+    RBTree Tree1;
+    Tree1.insertValue(8);
+    Tree1.insertValue(7);
+    Tree1.insertValue(6);
+    Tree1.insertValue(5);
+    Tree1.insertValue(2);
+    Tree1.insertValue(4);
+    Tree1.insertValue(3);
+    Tree1.insertValue(1);
+
+    Tree1.inorder();
+
 }
